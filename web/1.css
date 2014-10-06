@@ -1,0 +1,51 @@
+
+body{margin: 0px; font-family: 幼圆; color:#fff;}
+
+.standard-head
+{
+	width:100%; height: 50px; 
+	background-color: green; 
+	margin: 0 0 0 0;
+}
+.standard-heads1
+{
+	width:100%;height:20px;
+	float:left;
+	padding-left: 10%;
+	font-size: 15px;
+}
+.standard-heads2
+{
+	width:100%;height:30px;
+	float:left;
+	padding-left: 5%;
+	font-size: 20px;
+	margin-bottom: 5px;
+}	
+.standard-heads2 span
+{
+	padding-left:5%;
+}
+.standtard-space
+{
+	width:100%;height:10px;
+	background-color:white;
+}
+.standard-mainbody
+{
+	width:100%;height:50px;
+	background-color: yellow;
+}
+.standard-mainbody-leftbar
+{
+	width:2%;height:50px;
+	background-color: green;
+	float:left;
+}
+.standard-mainbody-picture
+{
+	width:20%;height:50px;
+	background-color: red;
+	float:right;
+}
+
