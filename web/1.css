@@ -4,14 +4,14 @@ body{margin: 0px; font-family: 幼圆; color:#fff;}
 .standard-head
 {
 	width:100%; height: 50px; 
-	background-color: green; 
+	background-color: #008A00; 
 	margin: 0 0 0 0;
 }
 .standard-heads1
 {
 	width:100%;height:20px;
 	float:left;
-	padding-left: 10%;
+	padding-left: 5%;
 	font-size: 15px;
 }
 .standard-heads2
@@ -26,26 +26,41 @@ body{margin: 0px; font-family: 幼圆; color:#fff;}
 {
 	padding-left:5%;
 }
-.standtard-space
-{
-	width:100%;height:10px;
-	background-color:white;
-}
 .standard-mainbody
 {
-	width:100%;height:50px;
-	background-color: yellow;
+	width:100%;height:80px;
+	background-color: #F5F5F5;
+	margin-top: 10px;
 }
 .standard-mainbody-leftbar
 {
-	width:2%;height:50px;
-	background-color: green;
+	width:1%;height:100%;
+	background-color: #008A00;
 	float:left;
+}
+.standard-mainbody-centre
+{
+	width:79%;height:100%;
+	background-color: transparent;
+	float:left;
+}
+.standard-mainbody-centre-up
+{
+	width:100%;height:60px;
+	background-color: transparent;
+	color:#242424;
+	text-indent: 2%
+}
+.standard-mainbody-centre-down
+{
+	width:100%;height:20px;
+	background-color: transparent;
+	color:#989898;
+	text-indent: 2%
 }
 .standard-mainbody-picture
 {
-	width:20%;height:50px;
-	background-color: red;
+	width:20%;height:100%;
+	background-color: #008A00;
 	float:right;
 }
-
