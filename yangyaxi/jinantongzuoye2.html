@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("bulbon"))
+  {
+  element.src="aaa.jpg";
+  }
+else
+  {
+  element.src="psb.gif";
+  }
+}
+</script>
+
+<img id="myimage" onclick="changeImage()" src="aaa.jpg">
+
+<p>司武洋是大笨蛋（点我点我）</p>
+
+</body>
+</html>
