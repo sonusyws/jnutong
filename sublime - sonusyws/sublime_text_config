@@ -1,0 +1,20 @@
+1、不出意外的话，大家装的都是Sublime Text 3 Beta版(不是的请自己去下载)那么安装之后必须要安装的一个插件是：Package Control，从名字就可以看出来，可以通过它安装别的插件包。在线安装方式如下（应该可用，不行的可以试试找找离线安装的方法）
+
+Ⅰ、按Ctrl+`（这不是单引号，在数字1旁边）调出console（注：安装有QQ输入法的这个快捷键会有冲突的，输入法属性设置-输入法管理-取消热键切换至QQ拼音）
+
+Ⅱ、粘贴以下代码到底部命令行并回车：
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+
+Ⅲ、安装之后，即可通过 Ctrl+Shift+p 调出菜单，选择Install Package即可通过搜索选择安装包了。
+
+Ⅳ、至于接下来要安装的插件，大家可以自行百度 “sublime text 3 插件推荐”即可，我们不仅要知道怎么装插件，还要知道怎么使用，是用哪些快捷键调用对应的插件这个一定要清楚，不会的请百度或者在群里问。所装的插件的作用也要明白.
+
+sublime 是一个很好的编辑工具，用得好可以大大提高工作效率。有时间可以去网上找关于它的使用视频看。
+
+
+推荐网址：http://www.tuicool.com/articles/qEFJrm
+		  http://www.oschina.net/translate/20-powerful-sublimetext-plugins
+		  http://blog.csdn.net/moyan_min/article/details/11530751
+		  http://ce.sysu.edu.cn/hope/Item.aspx?id=106853
+
+
