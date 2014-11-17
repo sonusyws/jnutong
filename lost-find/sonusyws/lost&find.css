@@ -1,0 +1,15 @@
+body {margin: 0; width: 100%; height: 100%; color: #ffffff; background-color: #c0c0c0;font-family: 幼圆;}
+.title {background-color: #ea5606; width: 100%; height: 40px;text-align: center;line-height: 40px;font-weight: bolder;}
+.back {width: 14%;height: 100%;float: left;}
+.name {width: 69%;height: 100%;float: left;}
+.add {width: 15%;height: 100%;float: left;}
+.l {float:left; width: 1px;height: 100%;background: #c0c0c0;}
+.h {width: 100%;height: 1px;background-color: #c0c0c0;}
+.head {background-color: #383832;width: 100%;height: 50px; text-align: center;text-decoration: none;font-size: 15px;font-weight: bold;}
+.head > span {width: 49%;margin: auto;float: left;text-align: center;height: 50px;line-height: 50px;}
+.head > span:hover {background-color: #181d18;}
+.infobar {margin: 10px auto; min-height:100px;background-color: #ffffff;width: 90%;border-radius: 2px;box-shadow: 0px 2px 1px  #292929; }
+.person {color: #9f9f9f;text-align: left;text-indent: 5px;width: 80%;height: 20px;}
+.time {color: #9f9f9f;text-indent: 5px;width: 80%;height: 30px;line-height: 30px;}
+.detail {color: #008040;font-weight: bolder;text-indent: 5px;width: 80%;min-height: 60px;}
+.call {float: right;width: 60px;text-align: center; height: 30px;line-height: 30px; background-color: #0080c0;border-radius: 3px;}
