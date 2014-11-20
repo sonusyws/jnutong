@@ -59,7 +59,7 @@
 			return $result;
 		}
 
-		function __destruct() {
+		function __destruct(){
 			if (is_resource($this->link)) mysql_close($this->link);
 		}
 	}	
