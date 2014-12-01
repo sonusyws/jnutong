@@ -1,2 +1,0 @@
-1.学习bootstrap
-附上学习的网址：http://www.w3cschool.cc/bootstrap/bootstrap-tutorial.html
