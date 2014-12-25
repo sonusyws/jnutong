@@ -1,0 +1,210 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>学习JS</title>
+</head>
+<style type="text/css">
+	div{
+		width: 100px;
+		height: 100px;
+	}
+	#test1{
+		background: green;	
+	}
+	#test2{
+		background: red;	
+	}
+	.test_14_1{
+		width: 300px;
+		height: 300px;
+		background: green;
+	}
+	.test_14_2{
+		width: 300px;
+		height: 300px;
+		background: red;
+	}
+	#event_25_1{
+		width:300px;
+		height;100px;
+		border:1px solid blue;
+	}
+	table{
+		width: 400px;
+		height:400px;
+		border: 0;
+		border-collapse: collapse;
+	}
+	td{
+		border: 1px solid gray; 
+
+	}
+</style>	
+<body onload="load();">
+
+<input type="button" value="前进" onclick="window.history.forward()">
+<input type="button" value="后退" onclick="window.history.back()">
+<!--第一个特效-->
+<h1>特效是什么</h1>
+<div id="test1" onclick="change()"></div>
+<!--开关灯泡-->
+<img id="Bulb" src="http://www.w3school.com.cn/i/eg_bulbon.gif" alt="" onclick="toggle1()">
+
+<h1>关键是找对象</h1>
+<div id="ob">
+	<p>p1</p>
+	<p>p2</p>
+	<p>p3</p>
+</div>
+<div class="ob2">class ob2</div>
+<input type="text" name="username" id="" value="poly">
+
+<div class="test_14_1"  onclick="t_14()" style="width:300px;height:300px;border-bottom:1px solid black;">
+	点击div，使其背景色红绿交替
+	宽高增加5px
+	下边框增粗1px
+</div>
+
+<input type="button" value="删除最后一个li" onclick="del();"/>
+<ul>
+	<li>春</li>
+	<li>夏</li>
+	<li>秋</li>
+	<li>冬</li>
+</ul>
+<input type="button" value="增加一个li" onclick="add();"/>
+<br><br>
+<input type="button" value="添加春夏秋" onclick="add1();"/>
+<input type="button" value="添加冬" onclick="add2();"/>
+<ul></ul>
+
+<select id="province" onchange="liandong();">
+	<option value="0">请选择你的城市</option>
+	<option value="北京">北京</option>
+	<option value="安徽">安徽</option>
+</select>
+<select id="city">
+</select>
+<br>
+<select id="province1" onchange="liandong1();">
+	<option value="-1">请选择你的城市</option>
+	<option value="0">北京</option>
+	<option value="1">安徽</option>
+</select>
+<select id="city1">
+</select>
+<h1>定时器</h1>
+<img src="bomb.jpg" alt="" id="setTimeout"/>
+<h1>优化定时器</h1>
+<img src="bomb.jpg" alt="" id="setTimeout1"/>
+<br>
+<input type= "button" name="time" value="5">
+<h1>setTimeout实现每N秒执行一次 </h1>
+<img src="bomb.jpg" alt="" id="setTimeout2"/>
+<br>
+<input type= "button" name="time2" value="5">
+<h1>常见事件</h1>
+<h2>onfocus onblus 事件</h2>
+<p>
+	用户名：<input type="text" name="user" onfocus="focus1();" onblur="lose_focus();">
+</p>
+<p>
+	Email：<input type="text" name="email">
+</p>
+<h2>onmouseover鼠标经过事件</h2>
+<div style="width:200px;height:200px;background:grey;" onmouseover = "over();"></div>
+<h2>onsubmit提交事件</h2>
+<form action="learn_js.html" onsubmit="return check();"><!--注意这里要加return,这样才能拦截提交-->
+	<p><input type="text" name="user1"></p>
+	<p><input type="text" name="email1"></p>
+	<p><input type="submit" value="提交"></p>
+</form>
+<h2>onload 网页加载完成</h2>
+注：调用函数在body标签中
+<p id="load_24">this is p</p>
+<h1>事件 行为 结构相分离</h1>
+<h2>分离前</h2>
+<div id="event_25" onclick="bian();" style="width:300px;height;100px;border:1px solid blue"></div>
+<h2>分离后</h2>
+<div id="event_25_1"></div>
+<h1>事件对象</h1>
+<pre>
+1：事件对象包含事件相关的信息，如鼠标，事件，触发的DOM对象等
+2：事件对象被系统传递给事件函数的第一个参数
+3：事件对象的属性在IE/w3c略有不同
+4：一个重要的时间属性：target, 【注意srcEElement（IE下）】，代表事件发生的所在DOM对象
+</pre>
+<img src="mn.jpg" id="mn" width="432px" height="270px" alt="">
+<h1>抓不到的美女</h1>
+<img src="mn.jpg" id="mn1" width="432px" height="270px" alt="">
+<h1>事件委托</h1>
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<h1>正则验证邮箱</h1>
+<pre>
+1：用户名只能是字母及数字6-11位
+2：email为正确的email
+</pre>
+<form action="learn_js.html">
+<p>用户名：<input type="text" name="userid" id=""></p>
+<p>邮箱：<input type="text" name="email2" id=""></p>
+<p><input type="submit" value="提交"></p>
+</form>
+<h1>正则匹配邮箱</h1>
+<input type="button" value="点击标注有邮箱的人" onclick="find_email();">
+<ul>
+<li>张飞</li>
+<li>刘备&lt;liubei@zixue.it&gt;</li>
+<li>关羽</li>
+<li>赵云&lt;zhaoyun@qq.com&gt;</li>
+</ul>
+
+
+
+
+
+
+
+<script src="learn_js.js"></script>
+</body>
+</html>
